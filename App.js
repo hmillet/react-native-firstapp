@@ -105,6 +105,57 @@ export default class App extends Component {
           </View>
           <View style={styles.part4Container2} />
         </View>
+        <ScrollView style={styles.lastContainer} horizontal={true}>
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+          <Image
+            style={{ width: 160, height: 250, marginRight: 20 }}
+            source={{
+              uri:
+                "http://www.dvdclassik.com/upload/images/affiches/2001-l-odyssee-de-l-espace.jpeg"
+            }}
+          />
+        </ScrollView>
       </ScrollView>
     );
   }
@@ -120,7 +171,6 @@ const styles = StyleSheet.create({
     height: 50,
     borderBottomColor: "#bbb",
     borderBottomWidth: StyleSheet.hairlineWidth,
-    flex: 1,
     alignItems: "center",
     justifyContent: "flex-end"
   },
@@ -132,7 +182,6 @@ const styles = StyleSheet.create({
   part2Container: {
     borderBottomColor: "#bbb",
     borderBottomWidth: StyleSheet.hairlineWidth,
-    flex: 1,
     alignItems: "flex-start",
     justifyContent: "flex-start",
     paddingHorizontal: 30,
@@ -205,5 +254,11 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center"
+  },
+  lastContainer: {
+    backgroundColor: "#1f1f1f",
+    height: 300,
+    flexDirection: "row",
+    padding: 15
   }
 });
