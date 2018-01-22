@@ -11,10 +11,13 @@ import {
   View,
   ScrollView,
   Image,
-  Button
+  TouchableOpacity
 } from "react-native";
 
 export default class App extends Component {
+  onPress = () => {
+    alert("toto");
+  };
   render() {
     console.log("- start App-");
     return (
@@ -53,12 +56,20 @@ export default class App extends Component {
               beneath the Lunar surface and, with the intelligent computer
               H.A.L. 9000, sets off on a quest
             </Text>
-            <Button
-              onPress={() => alert("toto")}
-              title="+ Add to Watchlist"
-              color="#3e90eb"
-              style={{ height: 40, fontSize: 25 }}
-            />
+            <TouchableOpacity
+              onPress={this.onPress}
+              style={{
+                backgroundColor: "#3e90eb",
+                borderRadius: 8,
+                height: 50,
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              <Text style={{ fontSize: 25, color: "#ffffff" }}>
+                + Add to Watchlist
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
         <View style={styles.part4Container}>
@@ -164,7 +175,7 @@ const styles = StyleSheet.create({
   part3Container2: {
     flex: 2,
     flexDirection: "column",
-    paddingHorizontal: 10,
+    paddingRight: 40,
     paddingVertical: 20
   },
   part3Text1: {
